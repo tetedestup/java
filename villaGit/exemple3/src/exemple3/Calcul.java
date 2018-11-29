@@ -28,8 +28,6 @@ public class Calcul {
 		System.out.println(" resultat dmod est " + dmod);
 		
 		
-		    // dresultat = 1.9;
-		  //System.out.println("une nouvelle resultat : " + Math.ceil(dresultat));
 	}
 
 }
