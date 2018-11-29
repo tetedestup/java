@@ -1,5 +1,5 @@
 package exemple3;
-
+ /*Exemple et applications exercice if else*/
 import java.util.Scanner;
 
 public class exercice1 {
