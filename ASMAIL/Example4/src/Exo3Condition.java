@@ -21,21 +21,19 @@ public class Exo3Condition {
 			break;
 		case 12:
 		case 10:
-			System.out.println("Assez Bien");
+			System.out.println("Trés Bien");
 			break;
 		case 9:
-		case 8:
-		case 7:
 		case 6:
+			System.out.println("Assez Bien");
+			break;
 		case 5:
-		case 4:
-		case 3:
-		case 2:
 		case 1:
 			System.out.println("Insuffisant");
 			break;
 		default:
 			System.out.println("Rejer");
+		
 		}
 	}
 
