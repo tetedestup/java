@@ -11,15 +11,20 @@ public class Exo3Condition {
 		int note = sc.nextInt();
 
 		switch (note) {
-		case 15:
+		case 16:
+		case 17:
+		case 18:
+		case 19:
 		case 20:
 			System.out.println("Excellent");
 			break;
-		case 16:
+		case 15:
+		case 14:
 		case 13:
 			System.out.println("Bien");
 			break;
 		case 12:
+		case 11:
 		case 10:
 			System.out.println("Trés Bien");
 			break;
@@ -33,8 +38,8 @@ public class Exo3Condition {
 			break;
 		default:
 			System.out.println("Rejer");
-		
 		}
+
 	}
 
 }
