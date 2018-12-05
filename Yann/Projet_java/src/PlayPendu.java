@@ -12,13 +12,21 @@ public class PlayPendu {
 		System.out.println("Rentre une lettre en miniscule, SVP");
 		
 		char answer;
+		 
 		
-		do {
-			answer= sc.nextLine().charAt(0);
-			switch (answer)
+		
+			do {
+				
+			
+					answer= sc.nextLine().charAt(0);
+					
+					switch (answer)
+					
+			
 			{
 			
 			case 'a':
+			
 				System.out.println("La lettre saisir se trouve bien dans le tableau a l'indice 0 \n Voulez vous essayer a nouveau ? (y/n)");
 				break;
 				
@@ -50,7 +58,10 @@ public class PlayPendu {
 					System.out.println("La lettre " + answer + " ne se trouve pas dans le tableau \n Rentrez une lettre en miniscule, SVP" );
 					break;
 			}
-		}while(answer!='n');
+				
+			
+			}while(answer!='n');
+	
 		
 		
 		
