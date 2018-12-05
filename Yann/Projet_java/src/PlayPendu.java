@@ -9,7 +9,7 @@ public class PlayPendu {
 		char tableau[]= {'a', 'e', 'i', 'o', 'u'};
 		
 		
-		System.out.println("Rentre une lettre en miniscule, SVP");
+		System.out.println("Rentrez une lettre en miniscule, SVP");
 		
 		char answer;
 		 
