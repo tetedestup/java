@@ -31,51 +31,58 @@ public class DevineMaLettre {
         	 
         			 if(answer==tableau[0])
         			 {
-   System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i) +" \n Voulez vous essayer a nouveau ? (y/n)");
+   System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i) +" \n Voulez vous essayer a nouveau ? (Y/N)");
         			 break;
         			 }
          		   
          		    
          		    else if(answer==tableau[1])
          		     {
-   System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i+1) + " \n Voulez vous essayer a nouveau ? (y/n)");
+   System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i+1) + " \n Voulez vous essayer a nouveau ? (Y/N)");
          		    break;
          		     }
          		    
          		    
          		    else if(answer==tableau[2])	
          		    {
-   System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i+2) + "\n Voulez vous essayer a nouveau ? (y/n)");
+   System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i+2) + "\n Voulez vous essayer a nouveau ? (Y/N)");
          		   break;
          		    }
          		    
          		    
          		    else if(answer==tableau[3]) 	
          		    {
-   System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i+3) +" \n Voulez vous essayer a nouveau ? (y/n)");
+   System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i+3) +" \n Voulez vous essayer a nouveau ? (Y/N)");
          		   break;
          		    }
          		    
          		    
          		    else if(answer==tableau[4])	
          		    {
-    System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i+4) + "\n Voulez vous essayer a nouveau ? (y/n)");
+    System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i+4) + "\n Voulez vous essayer a nouveau ? (Y/N)");
          		   break;
          		    }
          		    
          		    
          		    else if(answer==tableau[5]) 	
         		    {
-    System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i+5) + "\n Voulez vous essayer a nouveau ? (y/n)");
+    System.out.println("La lettre " + answer  +" se trouve bien dans le tableau a l'indice " + (i+5) + "\n Voulez vous essayer a nouveau ? (Y/N)");
          		   break;
          		    } 
         			 
         			 
-         		    else if(answer=='n') 
+         		    else if(answer=='N') 
          		    {
          		    	System.out.println("Au Revoir :) ");
          		    	break;
-         		    }
+         		   }
+        			
+        			 
+         		   else if(answer=='Y') 
+        		    {
+        		    	System.out.println("Yeah let's go :) \n Rentrez une lettre en miniscule, SVP");
+        		    	break;
+        		    }
         			 
         			 
          		    else 
@@ -89,7 +96,7 @@ public class DevineMaLettre {
         			 }
         		 
         		 
-        	 }while(answer!='n');
+        	 }while(answer!='N');
         	
 
         	 		
