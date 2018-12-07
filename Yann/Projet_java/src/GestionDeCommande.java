@@ -21,8 +21,8 @@ public class GestionDeCommande {
 		
 		
 		Accompagnement accompagnement1 = new Accompagnement("Légumes frais");
-		Accompagnement accompagnement2 = new 	Accompagnement("Frites");
-		Accompagnement accompagnement3 = new 	Accompagnement("Riz");
+		Accompagnement accompagnement2 = new Accompagnement("Frites");
+		Accompagnement accompagnement3 = new Accompagnement("Riz");
 		
 		
 		
@@ -36,11 +36,7 @@ public class GestionDeCommande {
 		Dessert dessert1 = new Dessert("Tiramisu");
 		Dessert dessert2 = new Dessert("Flan");
 		Dessert dessert3 = new Dessert("Yaourt");
-		
-		
-
-		
-			
+					
 		
 		//****************** CONDITION DE CHOIX POUR MENUS **************
 		
@@ -104,8 +100,8 @@ public class GestionDeCommande {
 				
 				if(selectionMenu==3) {
 		        	 
-		        	 System.out.println("\nChoix Accompagnements");
-		             System.out.println("1 - " + accompagnement3.ChoixAccompagnement());
+		        	 System.out.println("\nVoulez vous comme accompagnement " + accompagnement3.ChoixAccompagnement()+ " (Appuyer 4 pour OUI ou 5 pour NON)");
+		            
 		         }
 		         
 		         else {
@@ -126,6 +122,7 @@ public class GestionDeCommande {
 					{
 				
 					case 1: 
+						if(selectionAcc==3)
 					{System.out.println("Vous avez choisi comme accompagnement : " + accompagnement1.ChoixAccompagnement());
 					break;}
 					
@@ -135,6 +132,14 @@ public class GestionDeCommande {
 					
 					case 3: 
 					{System.out.println("Vous avez choisi comme accompagnement : " + accompagnement3.ChoixAccompagnement());
+					break;}
+					
+					case 4:
+					{System.out.println("Vous avez choisi comme accompagnement : " + accompagnement3.ChoixAccompagnement());
+					break;}
+					
+					case 5: 
+					{System.out.println("Vous ne voulez pas d'accompagnement pour votre Menu : " + menu3.ChoixMenu());
 					break;}
 					
 					default:
@@ -304,14 +309,12 @@ public class GestionDeCommande {
 								 	 System.out.println("menu: " + menu3.ChoixMenu());
 								 	 break;
 								  default:
-								 		System.out.println("Vous n'avez rien choisi ");
+								 		System.out.println("Vous n'avez rien choisi comme menu");
 								 		 break;
 								 		 
 								  }
-								  
-								  
-								  
-
+								
+								 
 								  switch(selectionAcc)
 								  {
 								  case 1:
@@ -324,8 +327,17 @@ public class GestionDeCommande {
 								  case 3:
 								 	 System.out.println("accompagnement: " + accompagnement3.ChoixAccompagnement());
 								 	 break;
+								 	
+								  case 4:
+									{System.out.println("accompagnement : " + accompagnement3.ChoixAccompagnement());
+									break;}
+									
+								  case 5: 
+									{System.out.println("Vous ne voulez pas d'accompagnement pour votre Menu : " + menu3.ChoixMenu());
+									break;}
+									
 								  default:
-								 		System.out.println("Vous n'avez rien choisi ");
+								 		System.out.println("Vous n'avez rien choisi comme accompagnement");
 								 		 break;
 								 		 
 								  }
@@ -345,10 +357,9 @@ public class GestionDeCommande {
 								  case 3:
 								 	 System.out.println("boisson: " + boisson3.ChoixBoisson());
 								 	 break;
-
-								 	 
+								 
 								 	 default:
-								 		 System.out.println("");
+								 		 System.out.println("Vous n'avez rien choisi comme boisson");
 								 		 break;
 								  }
 								  
@@ -369,7 +380,7 @@ public class GestionDeCommande {
 
 								 	 
 								 	 default:
-								 		System.out.println("Vous n'avez rien choisi ");
+								 		System.out.println("Vous n'avez rien choisi comme dessert");
 								 		 break;
 								  }
 								  System.out.println("******************************************************************");
