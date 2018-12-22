@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -14,24 +13,26 @@ public class RunApplication {
 		 * lettre else nbRreur++ nbCoup--
 		 */
 
+
 		Scanner sc = new Scanner(System.in);
 
 		int nbCoup = 10;
 		int nbErreur = 0;
-		char lettre = ' ';
+		char lettre = ' ', confirm = 'y';
 		String motTrouv = "";
+		
+		while(confirm == 'y') {
 
 		String[] list = new String[] { "un", "mot", "deviner", "autre" };
 		Random generator = new Random();
 		int randomIndex = generator.nextInt(list.length);
 		String motDev = list[randomIndex];
 
-		motDev = motDev.replaceAll("\\s+", "");
+		 motDev = motDev.replaceAll("\\s+", "");
 
-		//char[] arr = motDev.toCharArray();
-
+		// char[] arr = motDev.toCharArray();
 		// motTrouv = arr[0] + motDev.substring(motDev.length() -1);
-		System.out.println(motDev);
+	  	 System.out.println(motDev);
 
 		for (int i = 0; i < motDev.length(); i++) {
 
@@ -44,20 +45,29 @@ public class RunApplication {
 			} else {
 				nbCoup--;
 				nbErreur++;	
-			}
-			 
-			 System.out.println(motTrouv);
-			 
-			 if(!motTrouv.equals(motDev)) {
 				 System.out.println("Error: " + nbErreur);
-			 }else {
-				 System.out.println("You Won " + " Le Mot est: "+motTrouv);
-			 }
+				 System.out.println("Wrong Lettre ");
 
+				
+			}
+			 System.out.println(motTrouv);
+			
+		}
+		
+		 
+		 if(motTrouv.equals(motDev)) {
+			 System.out.println("Error: " + nbErreur);
+			 System.out.println("You Won Le Mot est: "+motTrouv);
+		 }
+	
+		 System.out.println("\nIf you want to try again click (y) :");
+		 motTrouv = "";
+		 confirm = sc.next().charAt(0);
+		
+		if(confirm != 'y') {
+			System.out.println("You have been exit of program !!");
+		}
 		}
 
-        
 
-	}
-
-}
+	}}
